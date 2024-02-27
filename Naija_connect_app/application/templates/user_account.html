@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section userAcctDiv">
+      <div class="media">
+        <img class="rounded-circle account-img" src="{{ image_file }}">
+        <div class="media-body">
+          <h2 class="account-heading">{{ user.username }}</h2>
+          <p class="text-secondary">{{ user.email }}</p>
+          <p class="text-secondary"><span class="stabio">State:</span> {{ user.state }}</p>
+          <p class="text-secondary bio"><span class="stabio">Bio:</span> <br>{{ user.bio }}</p>
+        </div>
+      </div>
+{% endblock %}
